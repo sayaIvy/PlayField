@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\Main.cpp" />
+    <ClCompile Include="Source\Application\Window.cpp" />
+    <ClCompile Include="Source\Game\Component\IComponent.cpp" />
+    <ClCompile Include="Source\Game\GameManager.cpp" />
+    <ClCompile Include="Source\Game\GameObject.cpp" />
+    <ClCompile Include="Source\Graphics\Renderer.cpp" />
+    <ClCompile Include="Source\Utility\FileIO.cpp" />
+    <ClCompile Include="Source\Utility\Math.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\Application\Window.h" />
+    <ClInclude Include="Includes\Game\Component\IComponent.h" />
+    <ClInclude Include="Includes\Game\GameManager.h" />
+    <ClInclude Include="Includes\Game\GameObject.h" />
+    <ClInclude Include="Includes\Graphics\Renderer.h" />
+    <ClInclude Include="Includes\Utility\FileIO.h" />
+    <ClInclude Include="Includes\Utility\Math.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,9 +145,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
