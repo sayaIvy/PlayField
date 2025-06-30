@@ -9,7 +9,9 @@
 #include <d3dcompiler.h>
 #pragma comment(lib, "d3dcompiler.lib")
 
-#include <DirectXMath.h> // DirectX Math ライブラリを使用します
+#include <DirectXMath.h>
+
+#include "AudioSystem.h"
 
 // 画面解像度を定義します
 #define SCREEN_WIDTH 800 
@@ -79,6 +81,20 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
   // Direct3D をセットアップして初期化します
   InitD3D(hWnd);
+
+	// ----------- AudioSystemの使用例 -----------
+  AudioSystem audio;
+  if (!audio.Initialize()) return 1;
+
+  WaveData wave;
+  if (!audio.PlayWaveSound(L"Assets/Sounds/pikopiko2.wav", wave, false)) return 1;
+
+  // 再生が終わるまで待機
+  while (audio.IsPlaying()) {
+    Sleep(10);
+  }
+  // AudioSystemのデストラクタで自動的に解放されます
+	// ----------- AudioSystemの使用例 -----------
 
   // メイン ループに入ります: 
 

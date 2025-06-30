@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{DDB4EF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sounds", "Sounds", "{013724EA-584D-427A-86DD-1AAAAF8D4D9D}"
 	ProjectSection(SolutionItems) = preProject
+		Wizerd\Assets\Sounds\pikopiko2.wav = Wizerd\Assets\Sounds\pikopiko2.wav
 		Wizerd\Assets\Sounds\test.wav = Wizerd\Assets\Sounds\test.wav
+		Wizerd\Assets\Sounds\waaaaaaaa.wav = Wizerd\Assets\Sounds\waaaaaaaa.wav
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shader", "Shader", "{471BC361-8DFF-448B-B1EF-2FA3D50AC240}"
